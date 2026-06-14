@@ -18,19 +18,19 @@ export const Header = () =>{
                     <nav className="navbar">
                         <ul>
                             <li className="first">
-                                <NavLink to="/" className="navlink">Home</NavLink>
+                                <NavLink to="/" className={({isActive}) => isActive ? "active-link" : ""}>Home</NavLink>
                             </li>
                             <li className="first">
-                                <NavLink to="about/" className="navlink">About</NavLink>
+                                <NavLink to="/about" className={({isActive}) => isActive ? "active-link" : ""}>About</NavLink>
                             </li>
                             <li className="first">
-                                <NavLink to="movies/" className="navlink">Movies</NavLink>
+                                <NavLink to="/movies" className={({isActive}) => isActive ? "active-link" : ""}>Movies</NavLink>
                             </li>
                             <li className="first">
-                                <NavLink to="contact/" className="navlink">Contact</NavLink>
+                                <NavLink to="/contact" className={({isActive}) => isActive ? "active-link" : ""}>Contact</NavLink>
                             </li>
                         </ul>
-                        <hr />
+                        
                     </nav>
                 </header>
             </>
